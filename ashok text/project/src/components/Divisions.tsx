@@ -1,22 +1,21 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+ import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 
 const divisions = [
   {
     name: 'Spinning',
     description: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1573766917336-f0b26ed75cef?auto=format&fit=crop&q=80'
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/weaving.jpg'
   },
   {
     name: 'Sizing',
     description: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&q=80'
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/weaving.jpg'
   },
   {
     name: 'Weaving',
     description: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80'
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/weaving.jpg'
   },
   {
     name: 'Made-ups',

@@ -1,12 +1,11 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+ import { motion } from 'framer-motion';
 
 export default function Hero() {
   return (
     <div id="home" className="relative h-screen">
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1558583055-d7ac00b1adca?auto=format&fit=crop&q=80"
+          src="https://ashoktextilemills.com/file/wp-content/uploads/2023/03/about-vision-mission.jpg"
           alt="Textile Manufacturing"
           className="w-full h-full object-cover"
         />

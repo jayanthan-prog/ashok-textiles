@@ -1,93 +1,121 @@
-import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Contact() {
   return (
-    <div id="contact" className="bg-white py-24 sm:py-32">
+    <div id="contact" className="bg-gradient-to-r from-gray-800 via-gray-900 to-black py-24 sm:py-32 text-white">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
-            Get in touch with us for any inquiries or support
-          </p>
+          <motion.h2 
+            className="text-4xl font-extrabold tracking-tight text-[#D4AF37] sm:text-5xl"
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+          >
+            Contact Us
+          </motion.h2>
+          <motion.p 
+            className="mt-4 text-xl leading-8 text-gray-300"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            Reach out for inquiries, support, or partnership opportunities.
+          </motion.p>
         </div>
+
         <div className="mx-auto mt-16 grid max-w-4xl grid-cols-1 gap-8 sm:grid-cols-2">
-          <div className="rounded-2xl bg-gray-50 p-10">
-            <h3 className="text-base font-semibold leading-7 text-gray-900">Contact Information</h3>
+          {/* Contact Information Section */}
+          <motion.div 
+            className="rounded-3xl bg-gray-800 p-10 shadow-2xl hover:shadow-3xl transform transition-all duration-500"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3 className="text-xl font-semibold text-[#D4AF37]">Contact Information</h3>
             <dl className="mt-3 space-y-6">
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <MapPin className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <MapPin className="h-7 w-7 text-[#D4AF37]" aria-hidden="true" />
                 </dt>
-                <dd className="text-sm leading-6 text-gray-600">
-                  123 Textile Road,<br />
-                  Industrial Area,<br />
-                  Your City, State 123456
+                <dd className="text-lg leading-7 text-gray-300">
+                  10/243, Thuraiyur Main Road,<br />
+                  Ponneri (PO)<br />
+                  Namakkal – 637013 Tamil Nadu, India.
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <Phone className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <Phone className="h-7 w-7 text-[#D4AF37]" aria-hidden="true" />
                 </dt>
-                <dd className="text-sm leading-6 text-gray-600">
-                  <a href="tel:+1234567890" className="hover:text-indigo-600">
-                    +1 (234) 567-890
-                  </a>
+                <dd className="text-lg leading-7 text-gray-300">
+                  <a href="tel:+91 98433 99161" className="hover:text-indigo-600">+91 98433 99161</a> <br />
+                  <a href="tel:04286 253077" className="hover:text-indigo-600">04286 253077</a>
                 </dd>
               </div>
               <div className="flex gap-x-4">
                 <dt className="flex-none">
-                  <Mail className="h-6 w-6 text-gray-400" aria-hidden="true" />
+                  <Mail className="h-7 w-7 text-[#D4AF37]" aria-hidden="true" />
                 </dt>
-                <dd className="text-sm leading-6 text-gray-600">
+                <dd className="text-lg leading-7 text-gray-300">
                   <a href="mailto:info@ashoktextilemills.com" className="hover:text-indigo-600">
-                    info@ashoktextilemills.com
+                    contactus@ashoktextilemills.com
                   </a>
                 </dd>
               </div>
             </dl>
-          </div>
-          <form className="flex flex-col gap-6">
+          </motion.div>
+
+          {/* Contact Form Section */}
+          <motion.form 
+            className="flex flex-col gap-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+          >
             <div>
-              <label htmlFor="name" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="name" className="block text-lg font-medium leading-6 text-gray-300">
                 Name
               </label>
               <input
                 type="text"
                 name="name"
                 id="name"
-                className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="mt-2 block w-full rounded-xl border-2 border-gray-300 bg-gray-900 px-4 py-3 text-gray-200 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 focus:outline-none sm:text-lg transition-all duration-300"
               />
             </div>
             <div>
-              <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="email" className="block text-lg font-medium leading-6 text-gray-300">
                 Email
               </label>
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="mt-2 block w-full rounded-xl border-2 border-gray-300 bg-gray-900 px-4 py-3 text-gray-200 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 focus:outline-none sm:text-lg transition-all duration-300"
               />
             </div>
             <div>
-              <label htmlFor="message" className="block text-sm font-medium leading-6 text-gray-900">
+              <label htmlFor="message" className="block text-lg font-medium leading-6 text-gray-300">
                 Message
               </label>
               <textarea
                 name="message"
                 id="message"
                 rows={4}
-                className="mt-2 block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="mt-2 block w-full rounded-xl border-2 border-gray-300 bg-gray-900 px-4 py-3 text-gray-200 shadow-sm placeholder:text-gray-400 focus:ring-2 focus:ring-indigo-600 focus:outline-none sm:text-lg transition-all duration-300"
               />
             </div>
-            <button
+            <motion.button
               type="submit"
-              className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              className="mt-6 rounded-xl bg-[#D4AF37] px-6 py-3 text-center text-lg font-semibold text-black shadow-lg hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-indigo-600 focus:ring-offset-2"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ duration: 0.3 }}
             >
               Send Message
-            </button>
-          </form>
+            </motion.button>
+          </motion.form>
         </div>
       </div>
     </div>
