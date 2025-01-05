@@ -1,5 +1,4 @@
-import React from 'react';
-import { Factory } from 'lucide-react';
+ import { Factory } from 'lucide-react';
 
 export default function Footer() {
   return (

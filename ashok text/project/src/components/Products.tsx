@@ -4,24 +4,24 @@ import { staggerChildren } from '../utils/animations';
 
 const products = [
   {
-    name: 'Cotton Fabrics',
-    description: 'High-quality cotton fabrics for various applications',
-    image: 'https://images.unsplash.com/photo-1596468138838-0f33ffa0173c?auto=format&fit=crop&q=80'
-  },
-  {
-    name: 'Synthetic Textiles',
-    description: 'Durable synthetic materials for modern needs',
+    name: 'YARN PRODUCTION',
+    description: 'Quality raw materials combined with the latest technologies of spinning, sizing & warping to produce a variety of yarns with International Standards',
     image: 'https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&q=80'
   },
   {
-    name: 'Blended Fabrics',
-    description: 'Perfect combination of natural and synthetic fibers',
-    image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&q=80'
+    name: 'WOVEN FABRICS',
+    description: 'We manufacture a wide range of woven fabrics along with grey fabrics using yarns produced in our mill to attain 100% quality.						',
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/weaving.jpg'
   },
   {
-    name: 'Technical Textiles',
-    description: 'Specialized fabrics for industrial applications',
-    image: 'https://images.unsplash.com/photo-1573766917336-f0b26ed75cef?auto=format&fit=crop&q=80'
+    name: 'MADE_UPS PRODUCTION',
+    description: 'The hospitality linen made in our Made-ups facility is famous for its aesthetic look along with the comfort & softness of the fabric used.',
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/cutting.jpg'
+  },
+  {
+    name: 'Spinning Products',
+    description: 'Compact Yarn ,Murata Vortex Yarn,Reiter Airjet Yarn,Hank Yarn,Modal Yarn,Excel Yarn,Liva Eco Yarn,High Twist Yarn (Tpi 28-48),Siro –Eli Twist Yarn,Slub Yarn ',
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/Ring-Frame.jpg'
   }
 ];
 

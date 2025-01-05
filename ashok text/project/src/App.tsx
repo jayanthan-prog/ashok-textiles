@@ -19,7 +19,6 @@ function App() {
         <Divisions />
         <Infrastructure />
         <Contact />
-        <Products/>
       </main>
       <Footer />
     </div>
