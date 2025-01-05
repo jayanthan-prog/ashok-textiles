@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import  { useState } from 'react';
 import { Factory, Menu, X } from 'lucide-react';
 
 const navItems = [
