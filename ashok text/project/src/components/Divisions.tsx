@@ -20,7 +20,7 @@ const divisions = [
   {
     name: 'Made-ups',
     description: 'Infrastructure',
-    image: 'https://images.unsplash.com/photo-1596468138838-0f33ffa0173c?auto=format&fit=crop&q=80'
+    image: 'https://ashoktextilemills.com/file/wp-content/uploads/2023/03/weaving.jpg'
   }
 ];
 

@@ -1,4 +1,4 @@
- import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import AnimatedSection from './AnimatedSection';
 import { Users, Award, Settings, Factory } from 'lucide-react';
 
@@ -90,9 +90,14 @@ export default function Infrastructure() {
         >
           <motion.a
             href="#about"
-            whileHover={{ scale: 1.05, textShadow: '0 0 10px rgba(255, 255, 255, 0.7)' }}
+            whileHover={{
+              scale: 1.05,
+              textShadow: '0 0 20px rgba(255, 255, 255, 0.8)',
+              color: '#FFD700', // Adding a golden text color when hovered
+            }}
             whileTap={{ scale: 0.95 }}
             className="text-indigo-400 font-semibold hover:text-indigo-300 text-xl"
+            transition={{ duration: 0.2 }}
           >
             Know More in the About Us
           </motion.a>
